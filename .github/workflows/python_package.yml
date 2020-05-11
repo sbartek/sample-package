@@ -16,7 +16,6 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Initialization
-      run: make init
+    - uses: dschep/install-pipenv-action@v1
     - name: Test with flake
-      run: make python_tests
+      run: pipenv run --dev
