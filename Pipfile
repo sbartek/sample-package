@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "==5.4.1"
+pytest-cov = "==2.8.1"
+flake8 = "==3.7.9"
+
+[packages]
+numpy = "==1.18.2"
+samplepackage = {editable = true,path = "."}
+
+[requires]
+python_version = "3.7"
